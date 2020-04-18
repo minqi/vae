@@ -1,7 +1,6 @@
 *~
 .venv
 venv
-!.gitkeep
 tmp
 .DS_Store
 .idea
@@ -10,8 +9,9 @@ tmp
 *.pyc
 *.h5
 __pycache__/
-data/
+data/*
+results/*
 checkpoints/
 logs/
-results/
 images/
+!.gitkeep
