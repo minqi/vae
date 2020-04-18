@@ -1,0 +1,11 @@
+name: torch
+channels:
+  - defaults
+dependencies:
+  - numba
+  - numpy
+  - matplotlib
+  - pandas
+  - pytorch
+  - torchvision
+prefix: /Users/minqi/opt/anaconda3/envs/torch
