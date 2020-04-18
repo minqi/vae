@@ -1,3 +1,14 @@
+# Variational Auto-Encoders
+
+A basic VAE implementation to reproduce the results in [Kingma and Welling, 2014](https://arxiv.org/abs/1312.6114).
+
+### Train on MNIST
+```
+conda env create -f environment.yml
+conda activate torch
+python vae.py
+```
+
 ### Command-line args
 |Arg|Value|
 |-|-|
@@ -12,8 +23,8 @@
 |test_output_size|square dimension of test sample plots|
 
 ### Examples
-Save decodings of 20x20 uniformly spaced latent codes in the latent space after each epoch as a .png.
+Save decodings of 20x20 uniformly spaced latent codes in the latent space after each epoch as a .png.  
 `python vae.py --n_epochs 5 --latent_size 2 --test_output uniform --tn 20`
 
-Save reconstructions of 20x20 random test samples after each epoch as a .png.
+Save reconstructions of 20x20 random test samples after each epoch as a .png.  
 `python vae.py --test_output random --tn 20`
